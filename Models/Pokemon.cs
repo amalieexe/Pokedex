@@ -35,7 +35,7 @@ namespace Pokedex.Models
         public int? Height { get; set; }
 
         [JsonProperty("location_area_encounters")]
-        public HttpClient? LocationAreaEncounters { get; set; }
+        public Uri LocationAreaEncounters { get; set; }
 
         [JsonProperty("past_types")]
         public List<Type>? PastTypes { get; set; }

@@ -8,6 +8,6 @@ namespace Pokedex.Models
         public string Name { get; set; }
 
         [JsonProperty("url")]
-        public string Url { get; set; }
+        public Uri url { get; set; }
     }
 }

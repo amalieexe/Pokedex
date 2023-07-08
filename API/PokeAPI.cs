@@ -18,6 +18,15 @@ namespace Pokedex.API
             return pokedexList;
         }
 
+        public async Task<Pokemon> GetPokemon(string name)
+        {
+            HttpResponseMessage response = await PokeAPI.GetAsync($"pokemon/{name}");
+            response.EnsureSuccessStatusCode();
+            string responseBody = await response.Content.ReadAsStringAsync();
+            Pokemon pokemon = JsonConvert.DeserializeObject<Pokemon>(responseBody);
+            return pokemon;
+        }
+
         public class Program
         {
             public static async Task Main()
@@ -27,7 +36,12 @@ namespace Pokedex.API
 
                 // You can now access the pokedexList and work with the data
 
-                Console.WriteLine($"Count: {pokedexList.PokedexEntries.Count()}");
+                Pokemon pokemon = await client.GetPokemon(pokedexList.PokedexEntries.First().Name);
+
+                Console.WriteLine(pokemon.Name);
+                Console.WriteLine(pokemon.BaseExperience);
+                Console.WriteLine(pokemon.Height);
+                Console.WriteLine(pokemon.Id);
             }
         }
     }
