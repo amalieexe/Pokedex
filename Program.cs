@@ -1,3 +1,7 @@
+using Pokedex.API;
+
+
+await PokeAPIClient.Program.Main();
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

@@ -29,3 +29,5 @@ C:\Users\Amalie\source\repos\Pokedex\Pokedex\obj\Debug\net6.0\refint\Pokedex.dll
 C:\Users\Amalie\source\repos\Pokedex\Pokedex\obj\Debug\net6.0\Pokedex.pdb
 C:\Users\Amalie\source\repos\Pokedex\Pokedex\obj\Debug\net6.0\Pokedex.genruntimeconfig.cache
 C:\Users\Amalie\source\repos\Pokedex\Pokedex\obj\Debug\net6.0\ref\Pokedex.dll
+C:\Users\Amalie\source\repos\Pokedex\Pokedex\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Amalie\source\repos\Pokedex\Pokedex\obj\Debug\net6.0\Pokedex.csproj.CopyComplete
