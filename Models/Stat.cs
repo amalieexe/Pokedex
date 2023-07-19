@@ -2,7 +2,7 @@
 
 namespace Pokedex.Models
 {
-    public class Move
+    public class Stat
     {
         [JsonProperty("name")]
         public string Name { get; set; }

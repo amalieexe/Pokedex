@@ -20,13 +20,13 @@ namespace Pokedex.Models
         public List<Type>? Types { get; set; }
 
         [JsonProperty("stats")]
-        public Stats? Stats { get; set; }
+        public List<Stats>? Stats { get; set; }
 
         [JsonProperty("moves")]
         public List<Move>? Moves { get; set; }
 
         [JsonProperty("species")]
-        public List<Species>? Species { get; set; }
+        public Species Species { get; set; }
 
         [JsonProperty("weight")]
         public int? Weight { get; set; }
