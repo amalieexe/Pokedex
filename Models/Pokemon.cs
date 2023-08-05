@@ -26,7 +26,7 @@ namespace Pokedex.Models
         public List<Move>? Moves { get; set; }
 
         [JsonProperty("species")]
-        public Species Species { get; set; }
+        public Species? Species { get; set; }
 
         [JsonProperty("weight")]
         public int? Weight { get; set; }
@@ -35,7 +35,7 @@ namespace Pokedex.Models
         public int? Height { get; set; }
 
         [JsonProperty("location_area_encounters")]
-        public Uri LocationAreaEncounters { get; set; }
+        public Uri? LocationAreaEncounters { get; set; }
 
         [JsonProperty("past_types")]
         public List<Type>? PastTypes { get; set; }
