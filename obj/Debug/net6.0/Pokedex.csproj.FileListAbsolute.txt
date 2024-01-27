@@ -31,3 +31,4 @@ C:\Users\Amalie\source\repos\Pokedex\Pokedex\obj\Debug\net6.0\Pokedex.genruntime
 C:\Users\Amalie\source\repos\Pokedex\Pokedex\obj\Debug\net6.0\ref\Pokedex.dll
 C:\Users\Amalie\source\repos\Pokedex\Pokedex\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Amalie\source\repos\Pokedex\Pokedex\obj\Debug\net6.0\Pokedex.csproj.CopyComplete
+C:\Users\Amalie\source\repos\Pokedex\Pokedex\obj\Debug\net6.0\Pokedex.sourcelink.json

@@ -1,11 +1,14 @@
 using Pokedex.API;
 
-
-await PokeAPIClient.Program.Main();
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddHttpClient<PokeAPIClient>(client =>
+{
+    client.BaseAddress = new Uri("https://pokeapi.co/api/v2/");
+});
+builder.Services.AddTransient<PokeAPIClient>();
 
 var app = builder.Build();
 

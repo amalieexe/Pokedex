@@ -1,10 +1,18 @@
 ﻿@page
-@model IndexModel
+@model Pokedex.Models.Pokemon
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Pokedex";
 }
 
+<h1>Search for a Pokémon</h1>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Pokédex</h1>
+    <form method="get" class="pokemonInput" asp-controller="pokemon" asp-action="GetPokemon">
+        <label for="fname">Enter a Pokémon name or Id:</label>
+        <input type="text" id="fname" placeholder="Pokémon" name="pname">
+        <input type="submit" value="Submit">
+    </form>
 </div>
+<table class="table">
+    ... use a table to display the page model.
+</table>
